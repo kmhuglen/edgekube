@@ -37,6 +37,13 @@ Add-PoshGitToProfile -AllHosts
 New-Item -Type Directory C:\Repos
 Set-Location C:\Repos
 git clone https://github.com/kmhuglen/edgekube.git
+Set-Location C:\Repos\edgekube
 ```
 
+## Deploy docker1
 
+This is just an example. Modify config-docker1.json to fit your environment
+
+```PowerShell
+.\Deploy-UbuntuVM.ps1 -ConfigFile config-docker1.json
+```
