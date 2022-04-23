@@ -13,12 +13,12 @@ How to setup and prepare a Ubuntu VM with MiniKube and Azure Arc on a Hyper-V ho
 Enter-PSSession -ComputerName <fqdn of hyper-v host> -Cred (get-credential)
 ```
 
-## Install Chocolatey, Git and PoshGit
+## Install Chocolatey
 ```PowerShell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-## Install git using Chocolatey
+## Install Git and PoshGit using Chocolatey
 ```PowerShell
 choco install git --params='/NoShellIntegration' -y
 $env:path+='C:\Program Files\Git\cmd'
