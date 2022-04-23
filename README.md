@@ -6,7 +6,9 @@ How to setup and prepare a Ubuntu VM with MiniKube and Azure Arc on a Hyper-V ho
 
 * Windows 10 or Windows Server 2019 or later with Hyper-V role
 
-## Remote Powershell (skip if working localy on your Windows 10 machine)
+## Remote Powershell
+(skip if working locally on your Windows 10 machine)
+
 ```PowerShell
 Enter-PSSession -ComputerName <fqdn of hyper-v host> -Cred (get-credential)
 ```
