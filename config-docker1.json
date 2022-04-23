@@ -1,0 +1,20 @@
+{
+    "DeploySettingsParameters": {
+        "DownloadSourceIFNotFound": true,
+        "VHDPath": "docker1.vhdx",
+        "MergeFolder": "docker1"
+    },
+    "VMFromUbuntuImageParameters": {
+        "VMName": "docker1",
+        "SourcePath": "ubuntu-20.04-server-cloudimg-amd64.img",
+        "VHDXSizeBytes": "30GB",
+        "MemoryStartupBytes": "3072MB",
+        "MemoryMaximumBytes": "5120MB",
+        "EnableDynamicMemory": true,
+        "ProcessorCount": "4",
+        "SwitchName": "Ethernet",
+        "IPAddress": "192.168.50.112/24",
+        "Gateway": "192.168.50.2",
+        "InstallDocker": true
+    }
+}
