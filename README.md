@@ -20,7 +20,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ## Install git using Chocolatey
 ```PowerShell
-choco install git -y
+choco install git.install -yfd
 ```
 
 ## Clone this repo
