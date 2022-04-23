@@ -1,6 +1,6 @@
 # edgekube
 
-How to setup and prepare a MiniKube on Hyper-V
+How to setup and prepare a Ubuntu VM with MiniKube and Azure Arc on a Hyper-V host.
 
 ## Prerequsite
 
