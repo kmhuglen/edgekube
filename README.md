@@ -4,11 +4,11 @@ How to setup and prepare a MiniKube on Hyper-V
 
 ## Prerequsite
 
-* Windows Server 2019 Standard Edition with Hyper-V role
+* Windows 10 or Windows Server 2019 or later with Hyper-V role
 
-## Remote Powershell
+## Remote Powershell (skip if working localy on your Windows 10 machine)
 ```PowerShell
-Enter-PSSession -ComputerName <fqdn of hyper-v server> -Cred (get-credential)
+Enter-PSSession -ComputerName <fqdn of hyper-v host> -Cred (get-credential)
 ```
 
 ## Install Chocolatey 
@@ -18,7 +18,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ## Install git using Chocolatey
 ```PowerShell
-choco install git
+choco install git -y
 ```
 
 ## Clone this repo
