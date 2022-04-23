@@ -1,6 +1,6 @@
-# edgekube
+# docker1
 
-How to setup and prepare a Ubuntu VM with MiniKube and Azure Arc on a Hyper-V host.
+How to setup and prepare a Ubuntu VM with Docker on a Hyper-V host.
 
 ## Prerequsite
 
