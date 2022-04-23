@@ -18,12 +18,18 @@ Enter-PSSession -ComputerName <fqdn of hyper-v host> -Cred (get-credential)
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-## Install Git and PoshGit using Chocolatey
+## Install Git using Chocolatey
 ```PowerShell
 choco install git --params='/NoShellIntegration' -y
 $env:path+='C:\Program Files\Git\cmd'
-choco install poshgit -y
 refreshenv
+```
+
+## Install GitPosh
+```
+Install-Module posh-git -Force
+Import-Module posh-git
+Add-PoshGitToProfile -AllHosts
 ```
 
 ## Clone this repo
